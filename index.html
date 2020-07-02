@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UX-Avant</title>
+		<link rel="icon" href="images/favicon.png" type="image/gif" sizes="32x32">
+		<meta name="description" content="Un espacio para la muestra, la reflexión y el desarrollo del diseño de experiencia de usuario">
+		<meta name="keywords" content="Conferencias, Barcelona, Elisava, UX">
+		<meta name="author" content="Eleni Taki">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+		<script type="text/javascript" src="js/jquery.wavify.js"></script>
+		<script type="text/javascript" src="js/javascript.js"></script>
+		<script>
+			$(document).ready(function(){
+		 		$("a").on('click', function(event) {
+		    		if (this.hash !== "") {
+		      			event.preventDefault();
+		     			var hash = this.hash;
+		     			$('html, body').animate({
+		        			scrollTop: $(hash).offset().top
+		     			}, 800, function(){
+		      					window.location.hash = hash;
+				      		});
+				    }
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<!--Navigation bar-->
+		<nav class="navbar navbar-toggleable-md navbar-color navbar-expand-md navbar-light fixed-top">
+  			<!-- Brand -->
+  			<a class="navbar-brand" href="#">UX-Avant</a>
+
+  			<!-- Toggler/collapsibe Button -->
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" >
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+
+		    <!-- Navbar links -->
+		    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+		    	<ul class="navbar-nav ml-auto">
+		      		<li class="nav-item">
+		        		<a class="nav-link" id="menuitems" href="#home">Inicio</a>
+		      		</li>
+		      		<li class="nav-item">
+		        		<a class="nav-link" id="menuitems" href="#programme">Programa</a>
+		      		</li>
+		      		<li class="nav-item">
+		        		<a class="nav-link" id="menuitems" href="#about">Sobre el evento</a>
+		      		</li>
+		      		<li class="nav-item">
+		        		<a class="nav-link btn btn-primary" href="http://www.elisava.net/es/musical-creation-and-interfaces-confirmacion-asistencia" target="_blank">Inscríbete</a>
+		      		</li>
+		    	</ul>
+		    </div>
+		</nav>
+
+		<!-- Main content -->
+		<main>
+			<section id="home">
+				<div class="container-fluid gradient gradient-height">
+	   				<div class="content">
+	     				<img class="logo-entero" src="images/logo_entero.png">
+	   				</div>
+		  			<div class="waves">
+		   				<div class="wave">
+		   					<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="wave-a" d=""/></svg>
+		   				</div>
+		   				<div class="wave">
+		   					<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="wave-b" d=""/></svg>
+		   				</div>
+					</div>			
+					<div class="container main-information">
+						<div class="row-title">
+							<div class="col-sm-10 col-md-10 col-lg-12 main-information align-center">
+								<div class="title">
+									<h1>Creación musical e interfaz:</h1>
+									<h2>Nuevas aproximaciones a la experiencia de usuario</h2>
+								</div>
+								<div class="info">
+									<p id="bold">31 de mayo de 2018</p>
+									<p>Sala Alex Carrió</p>
+									<p>Entrada gratuita. Aforo limitado</p>
+									<button type="button" class="btn float-btn"><a href="http://www.elisava.net/es/musical-creation-and-interfaces-confirmacion-asistencia" target="_blank">Inscríbete</a></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--program small screen-->
+			<section id="info">
+				<div id="pentagrama-desktop">
+					<div class="linea-pentagrama"></div>
+					<div class="linea-pentagrama"></div>
+					<div class="linea-pentagrama"></div>
+					<div class="linea-pentagrama"></div>
+					<div class="linea-pentagrama"></div>
+					<div class="circle-1 circle hidden-desktop"></div>
+					<div class="circle-2 circle hidden-desktop"></div>
+					<div class="circle-3 circle hidden-desktop"></div>
+				</div>
+				<div "col-sm-12" id="program">
+					<div class="program-part div1">
+						<div class="circle"></div>
+							<p class="time">17:00h</p>
+						<div class="program-right">
+							<h3>Presentación</h3>
+							<h4>Rosa Llop</h4>
+							<h4>Ariel Guersenzvaig</h4>
+							<p class="cv">Directores del Máster en Diseño y Dirección de Proyectos para Internet</p>
+							<p>En el marco del Máster en Diseño y Dirección de Proyectos para Internet presentamos la segunda edición de UX Avant, un espacio para la muestra, la reflexión y el desarrollo del diseño de experiencia de usuario como motor para la innovación.</p>
+							<p>En esta ocasión queremos dar voz a diferentes actores dentro del proceso de creación de interfaces musicales que nos puedan servir como referencia e inspiración para la innovación en el territorio de la interfaz de producto.</p>
+							<p>Contaremos con el testimonio de empresas emergentes, consolidadas, del ámbito académico, diseñadores, desarrolladores y artistas musicales con prácticas DIY que nos permitirán visualizar un escenario de experimentación y especulación sobre el que proyectar futuros para el diseño de experiencia en productos digitales.
+							</p>
+						</div>
+					</div>
+					
+					<div class="program-part div2">
+						<div class="circle"></div>
+							<p class="time">17:15h</p>
+						<div class="program-right">	
+							<h3>Teenage Engineering</h3>
+							<h3>Diseño visual vs Diseño técnico</h3>
+							<h4>David Möllerstedt</h4>
+							<p class="cv">Cofundador, new development</p>
+							<a class="blue" href="https://www.teenageengineering.com/">https://www.teenageengineering.com/</a>
+							<p>Uno de los cofundadores de Teenage Engineering, empresa referente por su carácter innovador, nos hablará de cómo desarrollan el particular universo de sus productos. Mediante la exposición de casos prácticos veremos cómo fabrican universos visuales únicos, tanto en forma como en proceso, y cómo éstos son generados a través del diálogo entre lo experiencial y los aspectos técnicos y estéticos de sus productos.
+							</p>
+							<p class="footnote">* Esta presentación será en inglés</p>
+						</div>
+					</div>
+					
+					<div class="program-part div3">
+						<div class="circle"></div>
+							<p class="time">17:45h</p>
+						<div class="program-right">
+							<h3>Ableton</h3>
+							<h3>16 años de Ableton Live</h3>
+							<h4>Torsten Slama</h4>
+							<p class="cv">Diseñador primera versión de Live - Ableton y pintor</p>
+							<h4>Ed Macovaz</h4>
+							<p class="cv">Head of Design Ableton</p>
+							<p class="moderador">Modera:</p>
+							<h4>Pablo Sanchez</h4>
+							<p class="cv">Diseñador en ableton</p>
+							<a class="blue" href="https://www.ableton.com">https://www.ableton.com</a>
+							<p>Live es un DAW que debido al diseño visionario de su interfaz apenas ha cambiado en sus 16 años de historia. El diseñador de la primera versión y el actual Head of Design de Ableton nos proporcionan dos visiones de un proceso de diseño separados por un cambio de paradigma en el propio medio ¿Cuáles eran los retos y condicionantes de su primera versión y cuáles han sido los de su última?
+							</p>
+							<p class="footnote">* Esta presentación será en inglés</p>
+						</div>	
+					</div>
+
+					<div class="program-part div4">
+						<div class="circle"></div>
+							<p class="time">18:15h</p>
+						<div class="program-right">
+							<h3>Pausa</h3>
+						</div>	
+					</div>
+
+					<div class="program-part div5">
+						<div class="circle"></div>
+							<p class="time">18:30h</p>
+						<div class="program-right">	
+							<h3>Reactable Systems</h3>
+							<h3>Cuando la investigación académica propone nuevos paradigmas.</h3>
+							<h4>Sergi Jordà</h4>
+							<p class="cv">PhD, Director del equipo de investigacion Music & Advanced Interaction - UPF,  inventor de Reactable</p>
+							<a class="blue" href="https://reactable.com/">https://reactable.com/</a>
+							<p>Uno de los creadores de Reactable nos presentará nuevos conceptos musicales que se desarrollan actualmente en la empresa Reactable Systems. Algunos de ellos derivados de Reactable, el instrumento que sorprendió al mundo por su originalidad y que sigue siendo referencia en el sector.
+							</p>
+						</div>	
+					</div>
+
+					<div class="program-part div6">
+						<div class="circle"></div>
+							<p class="time">19:00h</p>
+						<div class="program-right">
+							<h3>Presentación de resultados del workshop</h3>
+							<h3>Interface and Loop</h3>
+							<h4>Presentación a cargo de los estudiantes del máster.</h4>
+							<p>A partir del loop como unidad mínima de composición musical y la interfaz táctil como medio, los estudiantes nos mostrarán las posibilidades de su combinación. Durante dos días, los estudiantes del máster han trabajado en este reto junto a Pablo Sánchez, diseñador en Ableton, y  en este espacio nos mostraran los resultados.
+							</p>
+						</div>	
+					</div>
+					
+					<div class="program-part div7">
+						<div class="circle"></div>
+							<p class="time">19:30h</p>
+						<div class="program-right">	
+							<h3>Conversación con Cabo San Roque y Conductr</h3>
+							<h4>Albert Minguell</h4>
+							<p class="cv">Fundador de Conductr</p>
+							<a class="blue" href="https://www.conductr.net/">https://www.conductr.net/</a>
+							<h4>Laia Torrents</h4>
+							<p class="cv">Componente en Cabo San Roque</p>
+							<a class="blue" href="https://www.cabosanroque.com/">https://www.cabosanroque.com/</a>
+							<p class="moderador">Modera:</p>
+							<h4>Antònia Folguera</h4>
+							<p class="cv">Contenido y comunicación en Sónar+D</p>
+							<a class="blue" href="https://sonarplusd.com/en/about">https://sonarplusd.com/en/about</a>
+							<p>De la mano de artistas musicales que crean sus propios instrumentos y diseñadores que facilitan plataformas para crear música, veremos la importancia de lo singular y lo común en la creación musical. En un tiempo en que las disciplinas se difuminan conoceremos como una visión artesanal y una digital pueden complementarse para generar resultados únicos.
+							</p>
+						</div>	
+					</div>
+
+					<div class="program-part div8">
+						<div class="circle"></div>
+							<p class="time">20:15h</p>
+						<div class="program-right">	
+							<h3>Networking</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!---content-->
+			<section id="about">
+				<div class="container">
+					<h2>SOBRE EL EVENTO</h2>
+					<div class="divider"></div>
+					<div class="row">
+						<div class="col-sm-10 col-lg-7 col-center">
+							<p>UX Avant es la cara visible del laboratorio de investigación del Máster en Diseño y Dirección de Proyectos para Internet de ELISAVA.</p>
+							<p>El laboratorio tiene como objetivos el fomento del diálogo entre disciplinas, la exhibición de la práctica profesional, la exploración de prácticas especulativas que fomenten la innovación y la transmisión de conocimiento entre profesionales, investigadores y estudiantes.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 margin-colaborators">
+							<h3>Organiza</h3>
+						</div>
+					</div>
+					<div class="row justify-content-md-center">
+						<div class="col col-lg-3">
+							<img src="images/elisava.png">
+						</div>
+						<div class="col col-lg-3">
+							<div class="logo-master"> </div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 margin-sponsor">
+							<h3>Patrocina</h3>
+						</div>
+					</div>
+					<div class="row justify-content-md-center">
+						<div class="col col-lg-6">
+							<img class="sponsor" src="images/ableton-logo.png">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="divider-row"></div>
+							<h3>Curador del programa</h3>
+							<p>Pablo Sánchez</p>
+							<h3>Dirección</h3>
+							<p>Rosa Llop y Ariel Guersenzvaig</p>
+							<h3>Coordinación</h3>
+							<p>Fernando Eiras, Gestión de Postgrado</p>
+							<h3>Diseño y Comunicación</h3>
+							<p>Alumnos del Máster en Diseño y Dirección de Proyectos para Internet</p>
+							<h3 class="margin">Participan</h3>
+						</div>
+					</div>
+					<div class="row logos-colab align-items-center justify-content-center">
+						<div class="col-6 col-md-2 col-lg-2">
+							<img id="logos-part" src="images/teen-engi.png">
+						</div>
+						<div class="col-6 col-md-2  col-lg-2">
+							<img id="logos-part" src="images/ableton-logo-tr.png">
+						</div>
+						<div class="col-6 col-md-2  col-lg-2">
+							<img id="logos-part" src="images/reactable.png">
+						</div>
+						<div class="col-6 col-md-2  col-lg-2">
+							<img id="logos-part" src="images/shape.png">
+						</div>
+						<div class="col-6  col-md-2 col-lg-2">
+							<img id="logos-part" src="images/cabosanroque.png">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 bottom">
+							<h3 id="smaller">Colabora</h3>
+						</div>
+					</div>
+					<div class="row justify-content-md-center">
+						<div class="col col-lg-6">
+							<img id ="moritz" src="images/moritz.png">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 bottom">
+							<h3>Síguenos</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 col-md-12 align-center">
+							<a class="logo-fb" href="https://www.facebook.com/UxAvant"></a>
+							<a class="logo-lk" href=""></a>
+							<a class="logo-tw" href="https://twitter.com/ux_avant"></a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 about-bg">
+						</div>
+					</div>
+				</div>
+			</section>
+	</body>
+
+</html>
