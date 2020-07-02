@@ -1,2 +1,3 @@
-# ux-avant-tv
-Laboratorio del Máster en Diseño y Dirección de Proyectos para Internet de ELISAVA
+# ux-avant-music
+Creación musical e interfaz:
+Nuevas aproximaciones a la experiencia de usuario
